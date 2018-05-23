@@ -61,8 +61,8 @@ def get_person_group(person_group_id, person_id):
 
     return response.json()
 
-# file_name = "testing_data/chen.jpg"
-file_name = "testing_data/ko.jpg"
+# file_name = "../testing_data/chen.jpg"
+file_name = "../testing_data/ko.jpg"
 full_path = path.join(base_dir, file_name)
 with open(full_path, "rb") as image_file:
     img_binary = image_file.read() # BytesIO(image_file.read()) 也可

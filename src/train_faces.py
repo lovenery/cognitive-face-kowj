@@ -150,7 +150,7 @@ print(person_json, end='\n\n')
 person_id = person_json['personId']
 
 for i in range(1, 6):
-    file_name = "training_data/ko{}.jpg".format(i)
+    file_name = "../training_data/ko{}.jpg".format(i)
     full_path = path.join(base_dir, file_name)
     with open(full_path, "rb") as image_file:
         img_binary = image_file.read()
